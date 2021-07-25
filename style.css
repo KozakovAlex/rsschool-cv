@@ -42,7 +42,6 @@ body {
   font-size: 24px;
   color: rgb(184, 178, 178);
   background: linear-gradient(to left, rgb(51, 51, 51) 25%, rgb(83, 83, 83) 75%);
-  /* min-width: 1170px; */
 }
 
 img {
@@ -93,6 +92,12 @@ img {
   animation-delay: 1s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
+
+  transition: transform 0.3s;
+}
+
+.main-header__logo-pic:hover {
+  transform: scale(1.2);
 }
 
 @keyframes jumping {
@@ -146,18 +151,9 @@ img {
   opacity: 1;
 }
 
-/* .promo {
-  width: 100%;
-  height: 100vh;
-  background: url(../rsschool-cv/img/promo-bg.jpg) no-repeat center;
-  background-size: cover;
-} */
-
 .promo {
   margin-top: 118px;
   margin-bottom: 30px;
-  /* height: 500px; */
-  /* min-height: 100vh; */
 }
 
 .promo__wrapper {
@@ -170,8 +166,6 @@ img {
   flex-direction: column;
   justify-content: center;
   flex-basis: 40%;
-  /* padding: 20px 0 0 20px; */
-
 }
 
 .promo__title {
@@ -195,10 +189,6 @@ img {
 
 .promo__img-pic {
   display: block;
-  /* width: 100%;
-  height: 100%; */
-  /* margin: auto; */
-  /* object-fit: cover; */
   transition: transform 0.3s;
 }
 
@@ -216,8 +206,12 @@ img {
 
 .about__info-link {
   text-decoration: underline;
+  transition: color 0.3s;
 }
 
+.about__info-link:hover {
+  color: yellow;
+}
 
 .skills__wrapper {
   display: flex;
