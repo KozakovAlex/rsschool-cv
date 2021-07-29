@@ -28,6 +28,26 @@ img {
   margin: 0 auto;
 }
 
+.main-title {
+  font-family: "Forum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.main-title_white {
+  color: #FFFFFF;;
+}
+
+.main-title_gold {
+  color: #9D8665;
+}
+
+
 /* Header styles start */
 
 .main-header {
@@ -37,7 +57,7 @@ img {
   width: 100%;
   /* padding-bottom: 20px; */
   z-index: 999;
-  background-color: black;
+  /* background: #030303; */
 }
 
 .main-header__wrapper {
@@ -91,18 +111,82 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-.intro {
+/* Welcome styles start */
+.welcome {
+  /* height: 800px; */
+  background-color: #030303;
+  background-image: url(../img/welcome-bg.jpg);
+  /* background-size: 1215px 750px; */
+  
+  background-repeat: no-repeat;
+  background-position: right bottom;
   min-height: 100vh;
-  background: url(../img/intro-bg.jpg) no-repeat center;
-  background-size: cover;
-  padding-top: 263px;
-  padding-bottom: 223px;
+  padding-top: 314px;
 }
+
+/* .welcome__wrapper {
+  position: relative;
+} */
+
+.welcome__intro {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 598px;
+}
+
+.welcome__text {
+  margin-top: 26px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.welcome__button {
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-top: 76px;
+  padding: 24.5px 66px;
+  background: #710707;
+  border-radius: 10px;
+}
+
+/* Welcome styles end */
+
+
+
+/* Visiting styles start */
+.visiting {
+  padding: 75px 0;
+}
+
+.visiting__cards {
+  margin-top: 103px;
+}
+
+.visiting__wrapper > .main-title::after {
+  position: absolute;
+  content: '';
+  top: 115px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #710707;
+}
+
+.visiting__cards {
+  margin-top: 103px;
+}
+
+
+/* Visiting styles end */
