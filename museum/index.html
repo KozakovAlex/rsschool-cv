@@ -65,7 +65,7 @@
 
   <main>
 
-    <section class="welcome">
+    <section class="welcome" id="welcome">
       <div class="container">
         <div class="welcome__wrapper">
           <div class="welcome__intro">
@@ -235,28 +235,179 @@
               </p>
             </div>
           </div>
-
           <div class="video__item">
             <div class="video__poster">
               <img src="./img/video-poster.jpg" alt="video" class="video__pic">
               <button class="video__play"></button>
             </div>
             <div class="video__controls">
-              <button class="video__button play-prev"></button>
-              <button class="video__button play"></button>
-              <button class="video__button play-next"></button>
-              <input type="range" class="tape-range">
-              <button class="video__button sound"></button>
-              <input type="range" class="sound-range">
-              <button class="video__button zoom"></button>
+              <button class="video__button button-play-prev"></button>
+              <button class="video__button button-play"></button>
+              <button class="video__button button-play-next"></button>
+              <input type="range" class="tape-range" min="0" max="100" step="1" value="0">
+              <button class="video__button button-sound"></button>
+              <input type="range" class="sound-range" min="0" max="100" step="1" value="0">
+              <button class="video__button button-zoom"></button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="tickets" id="tickets">
+      <div class="container">
+        <div class="tickets__wrapper">
+          <h2 class="main-title main-title_white">
+            Buy tickets
+          </h2>
+          <div class="tickets__info">
+            <div class="tickets__column-img">
+              <img src="./img/tickets-img.jpg" alt="nice picture" class="tickets__column-img-pic">
+            </div>
+
+            <form action="#!" class="tickets__column-choose">
+              <fieldset class="tickets__type">
+                <legend class="tickets__subtitle">
+                  Ticket Type
+                </legend>
+                <label class="tickets__type-item">
+                  Permanent exhibition
+                  <input type="radio" name="ticket-type" class="tickets__type-item-input" checked="checked">
+                  <span class="tickets__type-item-checkmark"></span>
+                </label>
+                <label class="tickets__type-item">
+                  Temporary exhibition
+                  <input type="radio" name="ticket-type" class="tickets__type-item-input">
+                  <span class="tickets__type-item-checkmark"></span>
+                </label>
+                <label class="tickets__type-item">
+                  Combined Admission
+                  <input type="radio" name="ticket-type" class="tickets__type-item-input">
+                  <span class="tickets__type-item-checkmark"></span>
+                </label>
+              </fieldset>
+
+              <div class="tickets__amount">
+                <h4 class="tickets__subtitle">
+                  Amount
+                </h4>
+                <div class="tickets__amount-item">
+                  <h5 class="tickets__amount-title">
+                    Basic 18+
+                  </h5>
+                  <div class="tickets__amount-wrap">
+                    <button class="tickets__amount-btn" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" class="tickets__amount-input" min="0" max="20" step="1" value="1">
+                    <button class="tickets__amount-btn" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                </div>
+                <div class="tickets__amount-item">
+                  <h5 class="tickets__amount-title">
+                    Senior 65+
+                  </h5>
+                  <div class="tickets__amount-wrap">
+                    <button class="tickets__amount-btn" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" class="tickets__amount-input" min="0" max="20" step="1" value="1">
+                    <button class="tickets__amount-btn" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                </div>
+                <div class="tickets__output-wrap">
+                  <p class="tickets__output-text">
+                    Total €
+                  </p>
+                  <output class="tickets__output-sum">220</output>
+                </div>
+                <button type="submit" class="tickets__submit-btn">Buy Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <h2 class="main-title main-title_gold">
+            Video journey
+          </h2>
+          <div class="contacts__info">
+            <div class="contacts__column-text">
+              <h6 class="contacts__subtitle">
+                Palais Royal
+                <br>
+                Musee du Louvre
+              </h6>
+              <ul class="contacts__list">
+                <li class="contats__list-item">
+                  address: 75001 Paris, France
+                </li>
+                <li class="contats__list-item">
+                  phone: +33(0) 1 40 20 50 50
+                </li>
+                <li class="contats__list-item">
+                  mail: info@louvre.fr
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__column-map">
+              <img src="./img/contacts-map.jpg" alt="map" class="contacts__column-map-pic">
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__wrapper">
+        <div class="logo">
+          <a href="#!" class="logo__link">
+            <img src="./img/svg/logo.svg" alt="Louvre" class="logo__pic">
+            <h1 class="logo__title">
+              Louvre
+            </h1>
+          </a>
+        </div>
+        <nav class="main-nav main-nav_footer">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#welcome" class="main-nav__link">
+                Welcome
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#visiting" class="main-nav__link">
+                Visiting
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#explore" class="main-nav__link">
+                Explore
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#video" class="main-nav__link">
+                Video
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#tickets" class="main-nav__link">
+                Tickets
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contacts" class="main-nav__link">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>
