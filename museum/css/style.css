@@ -175,6 +175,15 @@ img {
   background-repeat: no-repeat;
   background-position: right bottom;
   /* background-position: calc(100% - 20px) calc(100% - 10px); */
+
+
+  /* background-size: 1215px 750px;
+    background-repeat: no-repeat;
+  background-position: calc(50% + 352px) 100%; */
+
+
+
+
   /* min-height: 100vh; */
   height: 950px;
   padding-top: 314px;
