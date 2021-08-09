@@ -1,3 +1,18 @@
+const buttonsMinus = document.querySelectorAll('.btn_minus');
+const buttonsPlus = document.querySelectorAll('.btn_plus');
+
+for(let buttonMinus of buttonsMinus) {
+  buttonMinus.addEventListener('click', function() {
+    this.nextElementSibling.stepDown();
+  })
+}
+
+for(let buttonPlus of buttonsPlus) {
+  buttonPlus.addEventListener('click', function() {
+    this.previousElementSibling.stepUp();
+  })
+}
+
 const mainHeader = document.querySelector('.main-header');
 (function () {
   window.onscroll = () => {
