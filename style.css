@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Amatic SC', cursive;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  background: #ffc600;
+}
+
+.main-title {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  column-gap: 5px;
+}
+
+.score__title,
+.score__result {
+  font-size: 45px;
+}
+
+.btn-start {
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 20%;
+  cursor: pointer;
+  box-shadow: 0 0 6px 1px;
+}
+
+
+.game-square {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+  background-color: blueviolet;
+}
+
+
