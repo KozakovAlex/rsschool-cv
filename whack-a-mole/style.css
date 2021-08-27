@@ -90,4 +90,6 @@ body {
   top: 0;
 }
 
-
+.my-cursor {
+  cursor: url(./img/target.png), auto;
+}
