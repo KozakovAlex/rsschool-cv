@@ -69,6 +69,11 @@ img {
   top: 0;
   left: 0;
   z-index: 999;
+  transition: all 0.3s;
+}
+
+.main-header_active {
+  background: linear-gradient(to left, rgb(32, 32, 32) 25%, rgb(58, 58, 58) 75%);
 }
 
 .main-header__wrapper {
@@ -79,6 +84,11 @@ img {
   max-width: 1170px;
   margin: 0 auto;
   padding: 20px;
+  transition: all 0.3s;
+}
+
+.main-header__wrapper_active {
+  padding: 0 20px;
 }
 
 .main-header__logo-pic {
@@ -204,12 +214,12 @@ img {
   padding: 20px 0;
 }
 
-.about__info-link {
+.main-link {
   text-decoration: underline;
   transition: color 0.3s;
 }
 
-.about__info-link:hover {
+.main-link:hover {
   color: yellow;
 }
 
@@ -224,7 +234,7 @@ img {
 }
 
 .skills__title {
-  font-size: 26px;
+  font-size: 30px;
   text-decoration: underline;
 }
 
@@ -240,6 +250,28 @@ img {
 
 .contacs__list {
   padding-left: 24px;
+}
+
+.code__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.code-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+code {
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
 }
 
 .main-footer__wrapper {
@@ -273,6 +305,30 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.up-button {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: rgb(184, 178, 178);
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px;
+  opacity: 0.3;
+  right: 50px;
+  bottom: 50px;
+  z-index: 999;
+  transition: all 0.3s;
+}
+
+.up-button:hover {
+  opacity: 0.7;
+}
+
+.up-button_active {
+  display: block;
 }
 
 @media screen and (max-width: 992px) {
