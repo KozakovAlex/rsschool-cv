@@ -1,6 +1,9 @@
 const mainHeader = document.querySelector('.main-header');
 const mainHeaderWrapper = document.querySelector('.main-header__wrapper');
 const upButton = document.querySelector('.up-button');
+const codeTitleButton = document.querySelector('.code-title-button');
+const codeExample = document.querySelector('.code-example');
+
 
 (function () {
   window.addEventListener('scroll', () => {
@@ -18,5 +21,10 @@ const upButton = document.querySelector('.up-button');
 
 upButton.addEventListener('click', () => {
   window.scrollTo(0, 0);
+})
+
+codeTitleButton.addEventListener('click', () => {
+  codeExample.classList.toggle('code-example_disabled');
+  codeExample.classList.toggle('code-example_active');
 })
 
