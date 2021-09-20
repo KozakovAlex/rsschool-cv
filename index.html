@@ -34,7 +34,41 @@
           </a>
         </div>
         <nav class="main-header__menu">
-          <ul class="main-header__menu-list">
+          <ul class="main-header__menu-list main-header__menu-list_hidden">
+            <li class="main-header__menu-list-item">
+              <a href="#about" class="main-header__menu-list-item-link">
+                About
+              </a>
+            </li>
+            <li class="main-header__menu-list-item">
+              <a href="#skills" class="main-header__menu-list-item-link">
+                Skills
+              </a>
+            </li>
+            <li class="main-header__menu-list-item">
+              <a href="#code" class="main-header__menu-list-item-link">
+                Code example
+              </a>
+            </li>
+            <li class="main-header__menu-list-item">
+              <a href="#projects" class="main-header__menu-list-item-link">
+                Projects
+              </a>
+            </li>
+            <li class="main-header__menu-list-item">
+              <a href="#contacts" class="main-header__menu-list-item-link">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__burger">
+          <span class="burger-line-top"></span>
+          <span class="burger-line-middle"></span>
+          <span class="burger-line-bottom"></span>
+        </div>
+        <nav class="main-header__menu-burger">
+          <ul class="main-header__menu-list main-header__menu-list_burger">
             <li class="main-header__menu-list-item">
               <a href="#about" class="main-header__menu-list-item-link">
                 About
@@ -91,25 +125,15 @@
             About me
           </h2> 
           <p class="about__info">
-            I work in finance, but I would like to change my job. I can't say that I don't like my work, 
-            but I don't see my future life on my current work-place. So I decided to try learning webdev 
+            I work in finance, but I would like to try myself in IT. So I decided to learn webdev 
             year ago. I began learning HTML&CSS from youtube courses, after that I continued to learn HTML, 
             CSS, JS in 
             <a href="https://htmlacademy.ru/courses" class="main-link">
               HTML-academy 
             </a>
-            (training tasks). I've finished some landing-sites, you can look it on 
-            <a href="https://github.com/KozakovAlex" class="main-link">
-              my repository.
-            </a>
-            Here are links of my main landing-sites on GitHub Pages:
-            <br>
-            <a href="https://kozakovalex.github.io/HouseSale_landing/" class="main-link">
-              - HouseSale_landing
-            </a>
-            <br>
-            <a href="https://kozakovalex.github.io/Watch-sales/" class="main-link">
-              - Watch-sales.
+            (training tasks). I've finished some landing-sites, you can look it  
+            <a href="#projects" class="main-link">
+              here.
             </a>
             <br>
             When I have free time, I try reading articles on 
@@ -191,9 +215,9 @@
               Kodewars(6kyu). Statistics for an Athletic Association
             </a>
           </h4>
-          <h4 class="code-title code-title-button">
-            Solution:
-          </h4>
+          <button type="button" class="code-title-button">
+            Solution
+          </button>
           <pre class="code-example code-example_disabled">
             <code class="js">
 function TimeObj(hours, minutes, seconds) {
@@ -295,12 +319,12 @@ stat("01|15|59, 1|47|16, 01|17|20, 1|32|34, 2|17|17") // Range: 01|01|18 Average
               </a>
             </div>
             <div class="projects__item">
-              <a href="https://kozakovalex.github.io/rsschool-cv/whack-a-mole/" class="projects__item-link" target="_blank">
+              <a href="https://kozakovalex.github.io/rsschool-cv/vertical-slider/" class="projects__item-link" target="_blank">
                 <h3 class="projects__item-title">
-                  Whack a mole
+                  Vertical slider
                 </h3>
                 <div class="projects__item-img">
-                  <img src="./img/Whack-a-mole.jpg" alt="Whack a mole" class="projects__item-pic">
+                  <img src="./img/Vertical-slider.jpg" alt="Vertical slider" class="projects__item-pic">
                 </div>
                 <p class="projects__item-descr">
                   Used technologies: flex layout, JS.
