@@ -231,9 +231,9 @@ function TimeObj(hours, minutes, seconds) {
     let h = this.hours;
     let m = this.minutes;
     let s = this.seconds;
-    if (h < 10) {h = '0' + h} else {h = '' + h};
-    if (m < 10) {m = '0' + m} else {m = '' + m};
-    if (s < 10) {s = '0' + s} else {s = '' + s};
+    if (h &lt; 10) {h = '0' + h} else {h = '' + h};
+    if (m &lt; 10) {m = '0' + m} else {m = '' + m};
+    if (s &lt; 10) {s = '0' + s} else {s = '' + s};
     return h + '|' + m + '|' + s;
   }
 }
