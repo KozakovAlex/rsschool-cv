@@ -16,6 +16,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
 </head>
 <body>
 
@@ -79,7 +81,28 @@
               Discover the Louvre
             </a>
           </div>
+          <div class="welcome__slider">
+            <div class="welcome__slider-wrap">
+              <div class="welcome__numbers">
+                <span class="welcome__numbers-item">01</span>
+                <span class="welcome__numbers-item">I</span>
+                <span class="welcome__numbers-item">05</span>
+              </div>
+              <div class="welcome__carousel">
+                <div class="welcome__carousel-slide welcome__carousel-slide_active"></div>
+                <div class="welcome__carousel-slide"></div>
+                <div class="welcome__carousel-slide"></div>
+                <div class="welcome__carousel-slide"></div>
+                <div class="welcome__carousel-slide"></div>
+              </div>
+              <div class="welcome__arrows">
+                <button class="welcome__arrows-left-arrow"></button>
+                <button class="welcome__arrows-right-arrow"></button>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   
@@ -237,17 +260,33 @@
           </div>
           <div class="video__item">
             <div class="video__poster">
-              <img src="./img/video-poster.jpg" alt="video" class="video__pic">
+              <img src="./img/video/video-poster-0.jpg" alt="video" class="video__pic">
               <button class="video__play"></button>
             </div>
             <div class="video__controls">
-              <button class="video__button button-play-prev"></button>
+              <!-- <button class="video__button button-play-prev"></button> -->
               <button class="video__button button-play"></button>
-              <button class="video__button button-play-next"></button>
+              <!-- <button class="video__button button-play-next"></button> -->
               <input type="range" class="tape-range" min="0" max="100" step="1" value="50">
               <button class="video__button button-sound"></button>
               <input type="range" class="sound-range" min="0" max="100" step="1" value="40">
               <button class="video__button button-zoom"></button>
+            </div>
+          </div>
+          <div class="video__slider">
+            <div class="video__slider-videos">
+              <div class="video__slider-item">
+                <iframe width="452" height="254" class="video__slider-video" src="https://www.youtube.com/embed/aWmJ5DgyWPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video__slider-item">
+                <iframe width="452" height="254" class="video__slider-video" src="https://www.youtube.com/embed/Vi5D6FKhRmo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video__slider-item">
+                <iframe width="452" height="254" class="video__slider-video" src="https://www.youtube.com/embed/NOhDysLnTvY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="video__slider-controls">
+
             </div>
           </div>
         </div>
@@ -257,7 +296,7 @@
     <section class="tickets" id="tickets">
       <div class="container">
         <div class="tickets__wrapper">
-          <h2 class="main-title main-title_white">
+          <h2 class="main-title main-title_gold">
             Buy tickets
           </h2>
           <div class="tickets__info">
@@ -442,3 +481,5 @@
   
 </body>
 </html>
+
+
