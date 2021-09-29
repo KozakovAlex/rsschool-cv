@@ -641,7 +641,9 @@ img {
 .gallery__pictures {
   display: flex;
   column-gap: 36px;
-  padding-top: 75px;
+  margin-top: 75px;
+  height: 2125px;
+  overflow: hidden;
 }
 
 .gallery__pictures-column {
@@ -649,7 +651,7 @@ img {
   flex-basis: 33.33%;
   flex-direction: column;
   row-gap: 24px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .gallery::after {
