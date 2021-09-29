@@ -642,6 +642,8 @@ img {
   display: flex;
   column-gap: 36px;
   padding-top: 75px;
+  max-height: 2125px;
+  overflow: hidden;
 }
 
 .gallery__pictures-column {
