@@ -641,8 +641,8 @@ img {
 .gallery__pictures {
   display: flex;
   column-gap: 36px;
-  padding-top: 75px;
-  max-height: 2125px;
+  margin-top: 75px;
+  height: 2125px;
   overflow: hidden;
 }
 
@@ -651,7 +651,7 @@ img {
   flex-basis: 33.33%;
   flex-direction: column;
   row-gap: 24px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .gallery::after {
